@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "swforce"
+version = "0.2.0"
+description = "Exact optical force and torque from vector spherical wave (T-matrix) coefficients, with SMUTHI, treams and OTT adapters"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Semyon Borodulin", email = "semyon.borodulin@metalab.ifmo.ru" }]
+license = { text = "PolyForm-Noncommercial-1.0.0" }
+keywords = ["optical force", "optical torque", "T-matrix", "vector spherical waves", "Maxwell stress tensor"]
+classifiers = [
+    "License :: Other/Proprietary License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Physics",
+]
+dependencies = ["numpy>=1.23", "scipy>=1.15"]
+
+[project.urls]
+Repository = "https://github.com/semyonbo/swforce"
+
+[project.optional-dependencies]
+smuthi = ["smuthi>=2.2"]
+treams = ["treams>=0.4.7"]
+test = ["pytest>=7", "hypothesis>=6", "mpmath>=1.3"]
+
+[tool.setuptools]
+packages = ["swforce", "swforce.adapters"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "slow: long-running (Sommerfeld integrals at high l_max, parameter scans)",
+    "smuthi: needs the smuthi package",
+    "treams: needs the treams package",
+]
+filterwarnings = [
+    "ignore::DeprecationWarning",
+    "ignore:.where. used without .out.:UserWarning",   # inside treams._operators, not ours
+]

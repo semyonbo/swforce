@@ -1,0 +1,49 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below, together with the article in 'references'."
+title: "swforce: exact optical force and torque from vector spherical wave coefficients"
+type: software
+authors:
+  - family-names: Borodulin
+    given-names: Semyon
+    email: semyon.borodulin@metalab.ifmo.ru
+version: 0.2.0
+date-released: 2026-10-23
+license: PolyForm-Noncommercial-1.0.0
+repository-code: "https://github.com/semyonbo/swforce"
+# doi: 10.5281/zenodo.XXXXXXX     # uncomment after the first Zenodo release (concept DOI)
+keywords:
+  - optical force
+  - optical torque
+  - T-matrix
+  - vector spherical wave functions
+  - Maxwell stress tensor
+  - nanophotonics
+references:
+  - type: article
+    title: "Directional Scattering-Induced Optical Forces on a Mie Particle near a Metal Interface"
+    authors:
+      - family-names: Borodulin
+        given-names: Semyon
+      - family-names: Kostina
+        given-names: Natalia
+      - family-names: Petrov
+        given-names: Mihail
+    year: 2026
+    doi: 10.48550/arXiv.2604.19428
+    url: "https://arxiv.org/abs/2604.19428"
+    identifiers:
+      - type: other
+        value: "arXiv:2604.19428"
+  - type: article
+    title: "Force, torque, and absorbed energy for a body of arbitrary shape and constitution in an electromagnetic radiation field"
+    authors:
+      - family-names: Farsund
+        given-names: "Ø."
+      - family-names: Felderhof
+        given-names: B. U.
+    journal: "Physica A"
+    volume: 227
+    start: 108
+    end: 130
+    year: 1996
+    doi: 10.1016/0378-4371(96)00009-X
