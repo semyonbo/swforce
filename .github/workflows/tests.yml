@@ -2,7 +2,13 @@ name: tests
 
 on:
   push:
+    paths-ignore: [README.md, CITATION.cff, LICENSE.md]
   pull_request:
+    paths-ignore: [README.md, CITATION.cff, LICENSE.md]
+
+concurrency:                     # a newer push cancels the run still going for this branch
+  group: tests-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   core:
