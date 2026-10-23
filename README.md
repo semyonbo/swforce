@@ -1,6 +1,6 @@
 # swforce
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23583941.svg)](https://doi.org/10.5281/zenodo.23583941)
 [![tests](https://github.com/semyonbo/swforce/actions/workflows/tests.yml/badge.svg)](https://github.com/semyonbo/swforce/actions/workflows/tests.yml)
 [![License: PolyForm Noncommercial 1.0.0](https://img.shields.io/badge/license-PolyForm%20Noncommercial%201.0.0-blue)](LICENSE.md)
 
@@ -175,7 +175,7 @@ tests/              tests and independent references (tests/oracles.py)
 
 If you use swforce in published work, please cite the software and the article it was developed for:
 
-- **Software:** Semyon Borodulin, *swforce: exact optical force and torque from vector spherical wave coefficients*, Zenodo (2026). DOI: [10.5281/zenodo.XXXXXXX](https://doi.org/10.5281/zenodo.XXXXXXX)
+- **Software:** Semyon Borodulin, *swforce: exact optical force and torque from vector spherical wave coefficients*, Zenodo (2026). DOI: [10.5281/zenodo.23583941](https://doi.org/10.5281/zenodo.23583941) (version 0.2.0; [10.5281/zenodo.23583940](https://doi.org/10.5281/zenodo.23583940) always points to the latest version)
 - **Article:** Semyon Borodulin, Natalia Kostina, Mihail Petrov, *Directional Scattering-Induced Optical Forces on a Mie Particle near a Metal Interface*, arXiv:2604.19428 (2026). DOI: [10.48550/arXiv.2604.19428](https://doi.org/10.48550/arXiv.2604.19428)
 
 ```bibtex
@@ -184,7 +184,7 @@ If you use swforce in published work, please cite the software and the article i
   title     = {swforce: exact optical force and torque from vector spherical wave coefficients},
   year      = {2026},
   publisher = {Zenodo},
-  doi       = {10.5281/zenodo.XXXXXXX},
+  doi       = {10.5281/zenodo.23583941},
   url       = {https://github.com/semyonbo/swforce}
 }
 
